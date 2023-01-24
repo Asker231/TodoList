@@ -1,0 +1,11 @@
+.todosection{
+    width: 90%;
+    height: 800px;
+    overflow: scroll;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}

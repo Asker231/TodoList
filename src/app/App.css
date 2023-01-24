@@ -1,0 +1,23 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section>.add{
+    cursor: pointer;
+    font-size: 40px;
+    padding: 2px;
+    transition: .4s;
+    border-radius: 30px;
+}
+.add:hover{
+    background-color: rgb(18, 195, 239);
+    padding: 5px;
+    color: #fff;
+}

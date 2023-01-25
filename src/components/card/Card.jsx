@@ -1,9 +1,14 @@
 import React from 'react'
 import style from './card.module.css';
 
-const Card = ({num}) => {
+const Card = ({title,text}) => {
   return (
-    <div className={style.card}>Card{num}</div>
+    <div className={style.card}>
+         <h4>{title}</h4>
+         <p>
+          {text}
+         </p>
+      </div>
   )
 }
 

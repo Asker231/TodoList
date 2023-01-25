@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import Card from '../card/Card';
 import style from './todosection.module.css';
 
 
 const TodoSection = () => {
-    const m = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,3,4,5,5,67,8,8,8,9,123,3,3,43,43,423,424,2]
-  return (
+   const sel = useSelector(state=>state.todo.arr)
+   return(
     <div className={style.todosection}>
-        {
-            m.map((el)=>{
-                return <Card num={el}/>
-            })
-        }
-    </div>
-  )
+    {
+       sel.map((el)=>{
+           return <Card title={el.title} text={el.text}/>
+       })
+   }
+</div>
+   )
 }
 
 export default TodoSection

@@ -1,9 +1,10 @@
 .card{
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     background-color: yellow;
     transition: .4s;
     padding: 20px;
+    overflow: hidden;
 }
 .card:hover{
     -webkit-box-shadow: 1px 7px 25px -5px rgba(101, 102, 102, 1);
